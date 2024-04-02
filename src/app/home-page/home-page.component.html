@@ -1,0 +1,29 @@
+
+<mat-tab-group>
+    <mat-tab label="Por cedula">
+        <div class="">
+            <div class="" *ngIf="datos">
+                <ul>
+                    <li *ngFor="let item of datos">
+                        {{ item.id_customer }} - {{ item.name }} - {{ item.email}} - {{ item.phone}}
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Por nombre">
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <div class="form-group">
+                      <label for="numeroInput">Ingrese un número:</label>
+                      <input type="text" class="form-control" id="numeroInput" pattern="[0-9]{1,10}" maxlength="10" placeholder="Ingrese solo números" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingrese solo números con un máximo de 10 caracteres.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </mat-tab>
+</mat-tab-group>
