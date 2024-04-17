@@ -10,7 +10,10 @@ export class ProductosService {
 
   constructor(private http: HttpClient) { }
   
-  getAllCustomers(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/getAllCustomers`);
+  fetchAllCustomers(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/getAllCustomers`);
   }
+  // getAllCustomers(): Observable<any> {
+  //   return this.http.get<any>(`${this.apiUrl}/getAllCustomers`);
+  // }
 }

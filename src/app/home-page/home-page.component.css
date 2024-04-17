@@ -1,3 +1,17 @@
 .mat-tab-group {
     margin-bottom: 48px;
+} 
+body{
+ background-color: black; 
+}
+.btn-primary{
+    background-color: #40597B;
+    border: 1px solid #40597B;
+}
+label{
+    font-weight: 600;
+    color: #40597B;
+}
+.dato{
+    color: #404040;
 }
